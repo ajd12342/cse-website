@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Team</title>
+	<link rel="icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  	<script type="text/javascript">
+		function looper(){
+			d=new Date();
+			document.getElementById("date").innerHTML = d.toLocaleString();
+		}
+		function main(){
+			var t=setInterval(looper,1000)
+		}
+	</script>
+  	<style>
+  		 body{
+      padding-bottom: 50px;
+      background-image: url("bg.jpg"); 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     }
+        .card {
+            width: 100%;
+            background-color: #FFFFFF;
+            padding: 5px 20px;
+        }
+        .card:hover {
+            width: 100%;
+            background-color: #FFFFFF;
+            box-shadow: 6px 6px 4px grey;
+            padding: 5px 20px;
+        }
+        .dropdown:hover .dropdown-menu{
+        display: block;
+    margin-top: 0;
+      }
+    </style>
+</head>
+<body onload="main()">
+	<div class="container-fluid">
+		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="font-style: italic;">Anuj Diwan</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li class="active"><a href="#">The Team</a></li>
+      <li><a href="acads.html">Academics</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comments
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="commentinput.php">Leave a comment</a></li>
+          <li><a href="commentshow.php">See all comments</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+		<div class="row">
+			<div class="col-sm-3">
+				<img src="images/group2.jpg" class="img-rounded" alt="Tux">
+			</div>
+			<div class="jumbotron col-sm-9" style="background-color: transparent;">
+				<h1>Pseudorandom-Coders</h1>
+				<h3>Because we're the ones who appear to code at random, but appearances can be deceptive...😉</h3>
+			</div>
+		</div>
+		<div class="row" style="text-align:center">
+			<h1>The Team</h1>
+		</div>
+		<div class="container-fluid" style="text-align: center">
+			<div class="col-sm-4">
+				<div class="card">
+				<img style="display: block;margin:auto auto; "src="images/anuj.jpg" class="img-fluid img-responsive">
+				<h2 class="card-text">Anuj Diwan</h2>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card">
+				<img style="display: block;margin:auto auto;" src="images/rahul.jpg" class="img-fluid img-responsive">
+				<h2 class="card-text">Rahul Bhardwaj</h2>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card">
+				<img style="display: block;margin:auto auto;" src="images/soumya.jpeg" class="img-fluid img-responsive">
+				<h2 class="card-text">Soumya Chatterjee</h2>
+				</div>
+			</div>
+		</div>
+		<h4 id="date" style="text-align: right"></h4>
+	</div>
+</body>
+</html>

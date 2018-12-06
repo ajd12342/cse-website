@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<link rel="icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  	<style type="text/css">
+      .dropdown:hover .dropdown-menu{
+        display: block;
+    margin-top: 0;
+      }
+       body{
+      padding-bottom: 50px;
+      background-image: url("bg.jpg"); 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     }
+     </style>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="font-style: italic;">Anuj Diwan</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.php">Home</a></li>
+      <li class="active"><a href="#">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="team.html">The Team</a></li>
+      <li><a href="acads.html">Academics</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comments
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="commentinput.php">Leave a comment</a></li>
+          <li><a href="commentshow.php">See all comments</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+		<div class="jumbotron text-center" style="background-color: transparent; text-align: center;">
+			<h1>About Me</h1>
+			<h3>Use the tabs below to navigate through the different sections.</h3>
+			<h2>
+				<ul class="nav nav-pills" style="display: inline-block">
+    				<li class="active"><a data-toggle="pill" href="#interests">Interests</a></li>
+    				<li><a data-toggle="pill" href="#ambs">Ambitions and Goals</a></li>
+    				<li><a data-toggle="pill" href="#hobs">Hobbies</a></li>
+    				<li><a data-toggle="pill" href="#favs">Favourites</a></li>
+  				</ul>
+  			</h2>
+		</div>
+		<div class="tab-content">
+    		<div id="interests" class="tab-pane fade in active">
+      			<h1>Interests</h1>
+      			<h2>
+      				<ul>
+      					<li>Politics and current affairs</li>
+      					<li>History of mathematics</li>
+      					<li>How the world works</li>
+     				</ul>
+      			</h2>
+    		</div>
+    		<div id="ambs" class="tab-pane fade">
+      			<h1>Ambitions and Goals</h1>
+     			<h2>
+      				<ul>
+      					<li>Contribute meaningfully using my knowledge</li>
+      					<li>Pursue higher studies and research</li>
+      					<li>Live happily</li>
+     				</ul>
+      			</h2>
+    		</div>
+    		<div id="hobs" class="tab-pane fade">
+      			<h1>Hobbies</h1>
+      			<h2>
+      				<ul>
+      					<li>Reading about Math and Science</li>
+      					<li>Reading and Watching the News</li>
+      					<li>Reading books and solving Wordgames</li>
+      					<li>Coding🤩</li>
+      					<li>Watching movies and TV shows</li>
+      					<li>Playing tabla</li>
+     				</ul>
+      			</h2>
+    		</div>
+    		<div id="favs" class="tab-pane fade">
+      			<h1>Favourites</h1>
+      			<h2>
+      				<ul>
+      					<li>Movies:
+      						<ul>
+      							<li>The Matrix</li>
+      							<li>Inception</li>
+      							<li>MCU(all the movies)</li>
+      							<li>Mission Impossible</li>
+      						</ul>
+      					</li>
+      					<li>Books:
+      						<ul>
+      							<li>Harry Potter series</li>
+      							<li>Percy Jackson series</li>
+      							<li>Hercule Poirot books</li>
+      						</ul>
+      					</li>
+     				</ul>
+      			</h2>
+      		</div>
+      	</div>
+    </div>
+</body>
+</html>

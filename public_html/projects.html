@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects</title>
+	<link rel="icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  	 <style>
+  	 	 body{
+      padding-bottom: 50px;
+      background-image: url("bg.jpg"); 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     }
+        .card {
+            width: 100%;
+            background-color: #FFFFFF;
+            padding: 5px 15px;
+            margin-bottom: 10px;
+        }
+        .card:hover {
+            width: 100%;
+            background-color: #FFFFFF;
+            box-shadow: 6px 6px 4px grey;
+            padding: 5px 15px;
+        }
+        .card h3{
+        	display: inline-block;
+            font-style: italic;
+            color: grey;
+        }
+        #yr{
+            float:right;
+        }
+      .dropdown:hover .dropdown-menu{
+        display: block;
+    margin-top: 0;
+      }
+    </style>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="font-style: italic;">Anuj Diwan</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li class="active"><a href="#">Projects</a></li>
+      <li><a href="team.html">The Team</a></li>
+      <li><a href="acads.html">Academics</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comments
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="commentinput.php">Leave a comment</a></li>
+          <li><a href="commentshow.php">See all comments</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+		<div class="jumbotron" style="background-color: transparent; text-align: center;">
+			<h1>Projects</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="card">
+					<h1>Character and Shape Recognition</h1>
+					<h3>WnCC ITSP 2018</h3>
+					<h3 id="yr">Summer 2018</h3>
+					<h4>
+						<ul>
+							<li>Summer project for ITSP, 2018 under Web and Coding Club, IIT Bombay by Team Drishti(Anuj Diwan, Vijaykrishna G, Pranay Reddy S, Rahul Bhardwaj).</li>
+							<li>Our project extracts and identifies text from a given image, using image processing and a neural network.</li>
+							<li><a href="https://drive.google.com/open?id=146JySrLLs4c219xy4E7JWMoW3exkG1Lm" style="color: black; font-style: bold;">Link</a> to documentation and <a href="https://youtu.be/-5k1hb-mHK8" style="color: black; font-style: bold;">link</a> to YouTube video.</li>
+						</ul>
+					</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="card">
+					<h1>Stopwatch</h1>
+					<h3>Prof.M.B.Patil for EE112</h3>
+					<h3 id="yr">Spring 2017-18</h3>
+					<h4>
+						<ul>
+							<li>Course Project for EE112. A team consisting of Vedant Satav and me made a stopwatch entirely from scratch, using only basic ICs and counters.</li>
+							<li>The 1 Hz clock, decoders, timers, start/stop logic was entirely designed by us.</li>
+							<li><a href="https://drive.google.com/open?id=1_tHFn_9wZAI3dMAjl0snFh3uGFnWr5sN" style="color: black; font-style: bold;">Link</a> to documentation</li>
+						</ul>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="card">
+					<h1>Competitive Coding</h1>
+					<h3>WnCC Summer of Code 2018</h3>
+					<h3 id="yr">Summer 2018</h3>
+					<h4>Studied and practised concepts related to Competitive Coding under the mentorship of Ishan Tarunesh.</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="card">
+					<h1>Group Theory</h1>
+					<h3>MnP Summer of Science 2018</h3>
+					<h3 id="yr">Summer 2018</h3>
+					<h4>Reading project to explore deeper concepts of Group Theory under the mentorship of Toshi Parmar. Here's the <a href="https://drive.google.com/open?id=128rksXPer93WleY0LwID4oDTWXbni3z1" style="color: black; font-style: bold;">link</a> to documentation.</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

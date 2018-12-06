@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Academics and Timetable</title>
+  <link rel="icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+    body{
+      padding-bottom: 50px;
+      background-image: url("bg.jpg"); 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     }
+  	 .list-group {
+        list-style: decimal inside !important
+	   }
+
+	   .list-group-item {
+    	 display: list-item !important
+	   }
+     .dropdown:hover .dropdown-menu{
+        display: block;
+    margin-top: 0;
+      }
+      .panel-heading:hover{
+        background-color: #b3b3b3;
+      }
+      th,td{
+        white-space: nowrap;
+        text-align: center;
+      }
+      td{
+        color: white;
+      }
+      #CS207{
+        background-color: blue !important
+      }
+      #HS101{
+        background-color: purple !important
+      }
+      #CS213,#CS293{
+        background-color: green !important
+      }
+      #CS251{
+        background-color: orange !important
+      }
+      #CS215{
+        background-color: red !important
+      }
+      #SI417{
+        background-color: black !important
+      }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="font-style: italic;">Anuj Diwan</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="team.html">The Team</a></li>
+      <li class="active"><a href="#">Academics</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comments
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="commentinput.php">Leave a comment</a></li>
+          <li><a href="commentshow.php">See all comments</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+		<div class="container-fluid col-sm-6">
+      <div class="jumbotron" style="text-align: center; background-color: transparent;">
+        <h1>Academics</h1>
+      </div>
+			<div class="panel-group" id="accordion" style="active:'none'">
+    			<div class="panel panel-default">
+      				<div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        				<h2 class="panel-title">
+          					Autumn Semester 2017-18
+        				</h2>
+      				</div>
+      				<div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ol class="list-group">
+                    <li class="list-group-item">CS101 : Computer Programming and Utilization</li>
+                    <li class="list-group-item">EE111 : Introduction to Electrical Systems</li>
+                    <li class="list-group-item">MA105 : Calculus</li>
+                    <li class="list-group-item">CH105 : Organic & Inorganic Chemistry</li>
+                    <li class="list-group-item">CH107 : Physical Chemistry</li>
+                    <li class="list-group-item">PH107 : Quantum Physics and application</li>
+                    <li class="list-group-item">PH117 : Physics Lab</li>
+                    <li class="list-group-item">ME113 : Workshop Practice</li>
+                    <li class="list-group-item">NSO : Tabla</li>
+                  </ol>
+                </div>
+              </div>
+    			</div>
+    			<div class="panel panel-default">
+      				<div class="panel-heading" data-toggle="collapse" 
+                    data-parent="#accordion" 
+                    href="#collapse2">
+        				<h2 class="panel-title">
+          				Spring Semester 2017-18
+        				</h2>
+      				</div>
+      				
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ol class="list-group">
+                    <li class="list-group-item">EE112 : Introduction to Electronics</li>
+                    <li class="list-group-item">
+                    MA108 : Differential Equations 
+                    </li>
+                    <li class="list-group-item">MA106 : Linear Algebra</li>
+                    <li class="list-group-item">PH108 : Basics of Electricity & Magnetism</li>
+                    <li class="list-group-item">BB101 : Biology</li>
+                    <li class="list-group-item">
+                    CH117 : Chemistry Lab
+                    </li>
+                    <li class="list-group-item">ME 119 : Engineering Graphics & Drawing</li>
+                    <li class="list-group-item">NSO : Tabla</li>
+                  </ol>
+                </div>
+              </div>
+    			</div>
+    			<div class="panel panel-default">
+      				<div class="panel-heading"  data-toggle="collapse" href="#collapse3" data-parent="#accordion" >
+        				<h1 class="panel-title">
+          					Autumn Semester 2018-19
+        				</h1>
+      				</div>
+      				<div id="collapse3" class="panel-collapse collapse">
+        				<div class="panel-body">
+        					<ol class="list-group">
+        						<li class="list-group-item">CS207 : Discrete Structures</li>
+        						<li class="list-group-item">CS213 : Data Structures and Algorithms</li>
+        						<li class="list-group-item">CS215 : Data Analysis and Interpretation</li>
+        						<li class="list-group-item">CS251 : Software Systems Lab</li>
+        						<li class="list-group-item">CS293 : Data Structures and Algorithms Lab</li>
+        						<li class="list-group-item">HS101 : Economics</li>
+        						<li class="list-group-item">SI417: Introduction to Probability Theory</li>
+        					</ol>
+        				</div>
+      				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="container-fluid col-sm-6">
+        <div class="jumbotron" style="text-align: center; background-color: transparent;">
+          <h1>My Timetable</h1>
+        </div>
+        <div class="table-responsive">
+    		<table class="table table-hover table-striped table-bordered" style="empty-cells: show;">
+    			<thead>
+            <tr>
+              <th></th>
+              <th>8:30-9:00</th>
+              <th>9:00-9:30</th>
+              <th>9:30-10:00</th>
+              <th>10:00-10:30</th>
+              <th>10:30-11:00</th>
+              <th>11:00-11:30</th>
+              <th>11:30-12:00</th>
+              <th>12:00-12:30</th>
+              <th>12:30-1:00</th>
+              <th>1:00-1:30</th>
+              <th>1:30-2:00</th>
+              <th>2:00-2:30</th>
+              <th>2:30-3:00</th>
+              <th>3:00-3:30</th>
+              <th>3:30-4:00</th>
+              <th>4:00-4:30</th>
+              <th>4:30-5:00</th>
+              <th>5:00-5:30</th>
+              <th>5:30-6:00</th>
+              <th>6:00-6:30</th>
+              <th>6:30-7:00</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Monday</th>
+              <td colspan="2" id="CS207">CS207</td>
+              <td colspan="2" id="HS101">HS101</td>
+              <td colspan="10"></td>
+              <td colspan="3" id="CS213">CS213</td> 
+            </tr>
+            <tr>
+              <th>Tuesday</th>
+              <td colspan="2"></td>
+              <td colspan="2" id="CS207">CS207</td>
+              <td colspan="2" id="HS101">HS101</td>
+              <td colspan="5"></td>
+              <td colspan="8" id="CS251">CS251</td>
+            </tr>
+            <tr>
+              <th>Wednesday</th>
+              <td colspan="2"></td>
+              <td colspan="3" id="SI417">SI417</td>
+              <td colspan="3" id="CS215">CS215</td>
+              <td colspan="10"></td>
+              <td colspan="3" id="SI417">SI417</td>
+            </tr>
+            <tr>
+              <th>Thursday</th>
+              <td colspan="4"></td>
+              <td colspan="2" id="CS207">CS207</td>
+              <td colspan="2" id="HS101">HS101</td>
+              <td colspan="6"></td>
+              <td colspan="3" id="CS213">CS213</td>
+            </tr>
+            <tr>
+              <th>Friday</th>
+              <td colspan="2"></td>
+              <td colspan="3" id="SI417">SI417</td>
+              <td colspan="3" id="CS215">CS215</td>
+              <td colspan="3"></td>
+              <td colspan="6" id="CS293">CS293</td>
+            </tr>
+          </tbody>
+    		</table>
+      </div>
+    	</div>
+	</div>
+</body>
+</html>
