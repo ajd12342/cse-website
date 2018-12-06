@@ -4,8 +4,11 @@ if(!empty($_POST)){
 	$name=test_input($_POST["name"]);
 	$comment=test_input($_POST["comment"]);
 	$fields=array($name,$comment);
+	$h=fopen("comments.csv","a");
+	fputcsv($h,$fields);
+	fclose($h);
 	$name=$comment="";
-	$error='<h3 class="text-success col-sm-offset-2">Thanks for leaving a comment! Showing comments is currently disabled.</h3>';
+	$error='<h3 class="text-success col-sm-offset-2">Thanks for leaving a comment!</h3>';
 }
 function test_input($data) {
   $data = trim($data);
